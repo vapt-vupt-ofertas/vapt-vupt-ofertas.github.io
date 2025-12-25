@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 18vh;
+}
+
+body {
+  background: linear-gradient(180deg, #dbeafe, #f8fafc);
+  color: #0f172a;
+}
+
+/* HEADER */
+.header {
+  background: transparent;
+  padding: 30px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* espaço entre logo e texto */
+}
+
+.header img {
+  max-width: 60px;
+  border-radius: 100%;
+}
+
+.header-content h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #001068;
+  font-weight: 700;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+.hero {
+  padding: 0px 0px 40px 0px;
+}
+
+.hero-box {
+  background: linear-gradient(180deg, #eff6ff, #ffffff);
+  border-radius: 40px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 40px 100px rgba(30, 58, 138, 0.25);
+}
+
+/* TEXT */
+.hero h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.groups a {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero h2 span {
+  color: #f59e0b;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #334155;
+  margin-bottom: 40px;
+}
+
+.stores {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 60%;
+  margin: auto;
+}
+
+.ml img {
+  max-width: 6rem;
+}
+
+.shopee img,
+.amazon img {
+  max-width: 5rem;
+}
+
+.aliexpress img {
+  max-width: 2.5rem;
+  margin-left: 1rem;
+}
+
+/* CTA */
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cta-main {
+  display: inline-block;
+  padding: 22px 60px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.45);
+  margin-bottom: 25px;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.cta-secondary {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 999px;
+  background: #22c55e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  max-width: 30rem;
+  margin: auto;
+}
+
+/* PROOF */
+.proof {
+  margin-top: 35px;
+}
+
+.proof p {
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+/* HOW IT WORKS */
+.how {
+  padding: 90px 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.step {
+  background: linear-gradient(180deg, #eff6ff, #ffffff);
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.step span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #001068;
+  color: #ffffff;
+  border-radius: 50%;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* CONTACT */
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+button {
+  color: #001068;
+  padding: .8rem;
+  border: 2px solid #001068;
+  border-radius: 15px;
+  transition: all 200ms ease;
+  font-size: 1rem;
+  width: 150px;
+}
+
+.contact button:hover {
+  transform: translateY(-6px);
+}
+
+.to-home {
+  display: flex;
+  justify-content: center;
+}
+
+.to-home a i {
+  color: #001068;
+  font-size: 2rem;
+  margin: 0 30px 30px 30px;
+  transition: all 200ms ease;
+}
+
+.to-home a i:hover {
+  transform: translateY(-6px);
+}
+
+/* FOOTER */
+.footer {
+  background: #001068;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+/* =====================
+   MOBILE (MEDIA QUERY)
+===================== */
+@media (max-width: 900px) {
+
+  .brand h1 {
+    font-size: 20px;
+  }
+
+  .header img {
+    max-width: 40px;
+  }
+
+  .hero-box {
+    padding: 25px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .hero p,
+  proof p {
+    font-size: 12px;
+  }
+
+  .stores {
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  .cta-main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .cta-secondary .whatsapp {
+    text-align: center;
+  }
+}
