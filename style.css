@@ -227,6 +227,10 @@ button {
   transform: translateY(-6px);
 }
 
+.button button {
+  background-color: transparent;
+}
+
 .to-home {
   display: flex;
   justify-content: center;
